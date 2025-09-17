@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "title": "Warm Cocoa",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "color": "#ffffff",
+          "name": "Base",
+          "slug": "base"
+        },
+        {
+          "color": "#000000",
+          "name": "Contrast",
+          "slug": "contrast"
+        },
+        {
+          "color": "#795548",
+          "name": "Primary",
+          "slug": "primary"
+        },
+        {
+          "color": "#a1887f",
+          "name": "Secondary",
+          "slug": "secondary"
+        },
+        {
+          "color": "#efebe9",
+          "name": "Tertiary",
+          "slug": "tertiary"
+        }
+      ]
+    }
+  }
+}

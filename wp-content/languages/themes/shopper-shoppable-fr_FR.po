@@ -1,0 +1,90 @@
+# Translation of Themes - Shopper Shoppable in French (France)
+# This file is distributed under the same license as the Themes - Shopper Shoppable package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-08-28 07:29:12+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: fr\n"
+"Project-Id-Version: Themes - Shopper Shoppable\n"
+
+#. Description of the theme
+#: style.css
+#, gp-priority: high
+msgid "Shopper Shoppable is a simple, clean, and responsive child theme crafted for today’s dynamic e-commerce landscape. Built to enhance its parent theme, it offers a fresh, modern design that helps your store stand out from the crowd. With a strong focus on user experience, it's ideal for businesses selling a wide range of products—from fashion and cosmetics to tools, electronics, and home goods. Seamlessly integrated with Elementor and WooCommerce, it provides an intuitive store-building experience. Shopper Shoppable supports popular multilingual plugins, making it easy to reach a global audience. Built on the latest version of Bootstrap, it's fully responsive and ensures flawless performance across all devices. Whether you're selling boutique apparel, jewelry, perfume, pet supplies, children's toys, or barber tools, you can easily manage your store with its powerful cart system. The theme is also compatible with key plugins like WPML, Yoast, Contact Form 7, Mailchimp for WordPress, and bbPress, offering a flexible and scalable foundation for your online shop."
+msgstr "Shopper Shoppable est un thème enfant simple, épuré et responsive, conçu pour le contexte dynamique du commerce électronique d’aujourd’hui. Développé pour améliorer son thème parent, il offre un design frais et moderne qui aide votre boutique à se démarquer. Avec un fort accent sur l’expérience utilisateur, il est idéal pour les entreprises vendant une large gamme de produits — de la mode et des cosmétiques aux outils, à l’électronique et aux articles pour la maison. Parfaitement intégré à Elementor et WooCommerce, il offre une expérience intuitive de création de boutique. Shopper Shoppable prend en charge les extensions multilingues populaires, ce qui facilite l’accès à un public international. Construit sur la dernière version de Bootstrap, il est entièrement responsive et garantit des performances optimales sur tous les appareils. Que vous vendiez des vêtements de boutique, des bijoux, du parfum, des accessoires pour animaux, des jouets pour enfants ou des outils de barbier, vous pouvez facilement gérer votre boutique grâce à son puissant système de panier. Le thème est également compatible avec des extensions clés comme WPML, Yoast, Contact Form 7, Mailchimp for WordPress et bbPress, offrant une base flexible et évolutive pour votre boutique en ligne."
+
+#. Theme Name of the theme
+#: style.css
+#, gp-priority: high
+msgid "Shopper Shoppable"
+msgstr "Shopper Shoppable"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-page.php:48
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Modifier <span class=\"screen-reader-text\">%s</span>"
+
+#: template-parts/content-page.php:35
+msgid "Pages:"
+msgstr "Pages :"
+
+#: functions.php:374
+msgid "&nbsp;"
+msgstr "&nbsp;"
+
+#: functions.php:373
+msgid "Next"
+msgstr "Suivante"
+
+#: functions.php:372
+msgid "Previous"
+msgstr "Précédente"
+
+#. translators: %s: Number of comments.
+#: functions.php:289
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] "%s commentaire"
+msgstr[1] "%s commentaires"
+
+#: functions.php:280
+msgid "Posted in "
+msgstr "Publié dans "
+
+#: functions.php:274
+msgid "Posted on "
+msgstr "Publié le "
+
+#: functions.php:269
+msgid "By - "
+msgstr "Par - "
+
+#: functions.php:219
+msgid "Close"
+msgstr "Fermer"
+
+#: functions.php:29
+msgid "Default Header Image"
+msgstr "Image d’entête par défaut"
+
+#. Author URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://athemeart.com/"
+msgstr "https://athemeart.com/"
+
+#. Author of the theme
+#: style.css
+#, gp-priority: low
+msgid "aThemeArt"
+msgstr "aThemeArt"
+
+#. Theme URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://athemeart.com/downloads/shopper-shoppable/"
+msgstr "https://athemeart.com/downloads/shopper-shoppable/"

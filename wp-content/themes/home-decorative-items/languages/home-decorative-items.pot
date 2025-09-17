@@ -1,0 +1,631 @@
+# Copyright (C) 2025 Titan Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Home Decorative Items 1.9\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/home-decorative-items\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-08-25T17:28:23+05:30\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: home-decorative-items\n"
+
+#. Theme Name of the theme
+#: style.css
+#: inc/customizer.php:23
+msgid "Home Decorative Items"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://www.titanthemes.net/products/free-decor-wordpress-theme/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "The Home Decorative Items WordPress Theme is a beautifully designed theme crafted for home decor businesses, interior designers, and online decor stores. Whether you specialize in rustic decor, vintage decor, farmhouse decor, or minimalist decor, this theme provides a perfect platform to showcase and sell stylish home accessories. It is ideal for furniture shops, home decor inspiration blogs, and DIY home decor enthusiasts looking to share creative ideas. The theme seamlessly blends elegance and functionality, allowing users to display products such as designer furniture, wall decor, lighting decor, pendant lights, table lamps, and handcrafted decor in an appealing layout. With a modern, aesthetic decor-focused design, this theme suits both traditional and contemporary styles, making it perfect for businesses selling curtains and drapes, rugs and carpets, bedding sets, and luxury home textiles. This theme offers a visually stunning interface with high-resolution image galleries, customizable layouts, and a responsive design, ensuring a flawless display on all devices. It is optimized for SEO and fast loading, improving visibility and user experience. With built-in e-commerce functionality, businesses can easily sell decorative vases, scented candles, home fragrance, shelving units, and outdoor decor. Whether you’re curating bohemian decor, Scandinavian decor, or eco-friendly decor, the Home Decorative Items WordPress Theme is the perfect tool for building a stylish and professional online presence."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Titan Themes"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://www.titanthemes.net/"
+msgstr ""
+
+#: about-theme/about-theme.php:8
+msgid "https://www.titanthemes.net/products/free-decor-wordpress-theme"
+msgstr ""
+
+#: about-theme/about-theme.php:9
+msgid "https://preview.titanthemes.net/documentation/home-decorative-items-pro/"
+msgstr ""
+
+#: about-theme/about-theme.php:10
+msgid "https://wordpress.org/support/theme/home-decorative-items/"
+msgstr ""
+
+#: about-theme/about-theme.php:11
+msgid "https://wordpress.org/support/theme/home-decorative-items/reviews/#new-post"
+msgstr ""
+
+#: about-theme/about-theme.php:12
+msgid "https://www.titanthemes.net/products/home-decor-wordpress-theme"
+msgstr ""
+
+#: about-theme/about-theme.php:13
+msgid "https://preview.titanthemes.net/documentation/home-decorative-items/"
+msgstr ""
+
+#: about-theme/about-theme.php:14
+msgid "https://preview.titanthemes.net/home-decorative-items/"
+msgstr ""
+
+#: about-theme/about-theme.php:15
+msgid "https://www.titanthemes.net/products/wordpress-theme-bundle"
+msgstr ""
+
+#: about-theme/about-theme.php:68
+msgid "Welcome! Thank you for choosing %1$s."
+msgstr ""
+
+#: about-theme/about-theme.php:69
+msgid "By clicking \"Get Started,\" you can access our theme features."
+msgstr ""
+
+#: about-theme/about-theme.php:71
+msgid "Get started with %s"
+msgstr ""
+
+#: about-theme/about-theme.php:72
+msgid "GO FOR PREMIUM"
+msgstr ""
+
+#: about-theme/about-theme.php:124
+msgid "UPGRADE TO PREMIUM"
+msgstr ""
+
+#: about-theme/about-theme.php:132
+msgid "PREMIUM DEMONSTRATION"
+msgstr ""
+
+#: about-theme/about-theme.php:133
+msgid "Effortlessly create and customize your website by arranging text, images, and other elements using the Gutenberg editor, making web design easy and accessible for all skill levels."
+msgstr ""
+
+#: about-theme/about-theme.php:135
+msgid "DEMONSTRATION"
+msgstr ""
+
+#: about-theme/about-theme.php:139
+#: about-theme/about-theme.php:142
+msgid "REVIEWS"
+msgstr ""
+
+#: about-theme/about-theme.php:140
+msgid "We would be happy to hear your thoughts and value your evaluation."
+msgstr ""
+
+#: about-theme/about-theme.php:146
+msgid "24/7 SUPPORT"
+msgstr ""
+
+#: about-theme/about-theme.php:147
+msgid "Please do not hesitate to contact us at support if you need help installing our lite theme. We are prepared to assist you!"
+msgstr ""
+
+#: about-theme/about-theme.php:149
+msgid "SUPPORT"
+msgstr ""
+
+#: about-theme/about-theme.php:153
+msgid "THEME INSTRUCTION"
+msgstr ""
+
+#: about-theme/about-theme.php:154
+msgid "If you need assistance configuring and setting up the theme, our tutorial is available. A fast and simple method for setting up the theme."
+msgstr ""
+
+#: about-theme/about-theme.php:156
+msgid "DOCUMENTATION"
+msgstr ""
+
+#: about-theme/about-theme.php:165
+msgid "The premium version of this theme will be available for you to enhance or unlock our premium features."
+msgstr ""
+
+#: about-theme/about-theme.php:170
+#: inc/customizer.php:24
+msgid "GO TO PREMIUM"
+msgstr ""
+
+#: about-theme/about-theme.php:175
+msgid "PREMIUM DEMO"
+msgstr ""
+
+#: about-theme/about-theme.php:180
+msgid "PRO DOCUMENTATION"
+msgstr ""
+
+#: inc/customizer.php:31
+msgid "All themes in Single Package"
+msgstr ""
+
+#: inc/customizer.php:32
+msgid "GET BUNDLE"
+msgstr ""
+
+#: patterns/about-us.php
+msgctxt "Pattern title"
+msgid "About Us"
+msgstr ""
+
+#: patterns/about-us.php:20
+msgid "New Arrivals Product"
+msgstr ""
+
+#: patterns/about-us.php:24
+msgid "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+msgstr ""
+
+#: patterns/about-us.php:31
+msgid "Explore More"
+msgstr ""
+
+#: patterns/about-us.php:49
+#: patterns/about-us.php:71
+#: patterns/about-us.php:93
+#: patterns/about-us.php:115
+msgid "Brand Name Here"
+msgstr ""
+
+#: patterns/about-us.php:53
+#: patterns/about-us.php:75
+#: patterns/about-us.php:97
+#: patterns/about-us.php:119
+msgid "Product Name Here"
+msgstr ""
+
+#: patterns/about-us.php:57
+#: patterns/about-us.php:79
+#: patterns/about-us.php:101
+#: patterns/about-us.php:123
+msgid "$159.00"
+msgstr ""
+
+#: patterns/banner-block.php
+msgctxt "Pattern title"
+msgid "Banner Block"
+msgstr ""
+
+#: patterns/banner-block.php:16
+msgid "Home Decor"
+msgstr ""
+
+#: patterns/banner-block.php:20
+msgid "A Collection Of World Top Home"
+msgstr ""
+
+#: patterns/banner-block.php:20
+msgid "Decorative Item"
+msgstr ""
+
+#: patterns/banner-block.php:24
+msgid "It is a long established fact that a reader will be distracted by the readable<br>content of a page when looking at its layout."
+msgstr ""
+
+#: patterns/footer-default.php
+msgctxt "Pattern title"
+msgid "Default Footer"
+msgstr ""
+
+#: patterns/footer-default.php:22
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+msgstr ""
+
+#: patterns/footer-default.php:44
+msgid "Quick Links"
+msgstr ""
+
+#: patterns/footer-default.php:49
+msgid "About Us"
+msgstr ""
+
+#: patterns/footer-default.php:53
+msgid "Policy"
+msgstr ""
+
+#: patterns/footer-default.php:57
+msgid "Terms and Conditions"
+msgstr ""
+
+#: patterns/footer-default.php:61
+msgid "Career"
+msgstr ""
+
+#: patterns/footer-default.php:65
+msgid "Blog"
+msgstr ""
+
+#: patterns/footer-default.php:69
+#: patterns/footer-default.php:108
+msgid "Contact Us"
+msgstr ""
+
+#: patterns/footer-default.php:76
+msgid "Services"
+msgstr ""
+
+#: patterns/footer-default.php:81
+msgid "Knowledge Base"
+msgstr ""
+
+#: patterns/footer-default.php:85
+msgid "Contact Support"
+msgstr ""
+
+#: patterns/footer-default.php:89
+msgid "Privacy Policy"
+msgstr ""
+
+#: patterns/footer-default.php:93
+msgid "Blog Articles"
+msgstr ""
+
+#: patterns/footer-default.php:97
+msgid "Brand Assets"
+msgstr ""
+
+#: patterns/footer-default.php:101
+msgid "Brand Guidelines"
+msgstr ""
+
+#: patterns/footer-default.php:114
+msgid "14th Street, Caltech, New Jersey, Alabama"
+msgstr ""
+
+#: patterns/footer-default.php:120
+msgid "Monday - Friday"
+msgstr ""
+
+#: patterns/footer-default.php:124
+msgid "8:00 a.m. - 5:00 p.m."
+msgstr ""
+
+#: patterns/footer-default.php:130
+msgid "email@example.com"
+msgstr ""
+
+#: patterns/footer-default.php:136
+msgid "+1 (012) 345-6780"
+msgstr ""
+
+#: patterns/footer-default.php:147
+msgid "Home Decor WordPress Theme  "
+msgstr ""
+
+#: patterns/footer-default.php:147
+msgid "| Proudly powered By "
+msgstr ""
+
+#: patterns/footer-default.php:147
+msgid "WordPress"
+msgstr ""
+
+#: patterns/header.php
+msgctxt "Pattern title"
+msgid "Header"
+msgstr ""
+
+#: patterns/hidden-404.php
+msgctxt "Pattern title"
+msgid "Hidden 404"
+msgstr ""
+
+#: patterns/hidden-404.php:13
+msgctxt "Error code for a webpage that is not found."
+msgid "404"
+msgstr ""
+
+#: patterns/hidden-404.php:19
+msgctxt "Message to convey that a webpage could not be found"
+msgid "This page could not be found."
+msgstr ""
+
+#: patterns/hidden-404.php:22
+#: patterns/hidden-no-results.php:14
+msgctxt "label"
+msgid "Search"
+msgstr ""
+
+#: patterns/hidden-404.php:22
+#: patterns/hidden-no-results.php:14
+msgctxt "placeholder for search field"
+msgid "Search..."
+msgstr ""
+
+#: patterns/hidden-404.php:22
+#: patterns/hidden-no-results.php:14
+#: patterns/sidebar.php:12
+msgid "Search"
+msgstr ""
+
+#: patterns/hidden-comments.php
+msgctxt "Pattern title"
+msgid "Hidden Comments"
+msgstr ""
+
+#: patterns/hidden-comments.php:13
+msgctxt "Title of comments section"
+msgid "Comments"
+msgstr ""
+
+#: patterns/hidden-no-results.php
+msgctxt "Pattern title"
+msgid "Hidden No Results Content"
+msgstr ""
+
+#: patterns/hidden-no-results.php:10
+msgctxt "Message explaining that there are no results returned from a search"
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: patterns/post-meta.php
+msgctxt "Pattern title"
+msgid "Post Meta"
+msgstr ""
+
+#: patterns/post-meta.php:28
+msgctxt "Verb to explain the publication status of a post"
+msgid "Posted"
+msgstr ""
+
+#: patterns/post-meta.php:36
+msgctxt "Preposition to show the relationship between the post and its categories"
+msgid "in"
+msgstr ""
+
+#: patterns/post-meta.php:48
+msgctxt "Preposition to show the relationship between the post and its author"
+msgid "by"
+msgstr ""
+
+#: patterns/post-meta.php:64
+msgctxt "Label for a list of post tags"
+msgid "Tags:"
+msgstr ""
+
+#: patterns/related-post.php
+msgctxt "Pattern title"
+msgid "Related Post"
+msgstr ""
+
+#: patterns/related-post.php:10
+msgid "Related Posts :-"
+msgstr ""
+
+#: patterns/sidebar.php
+msgctxt "Pattern title"
+msgid "Sidebar"
+msgstr ""
+
+#: patterns/sidebar.php:22
+msgid "Archives"
+msgstr ""
+
+#: patterns/sidebar.php:32
+msgid "Popular Post"
+msgstr ""
+
+#: patterns/sidebar.php:52
+msgid "Categories"
+msgstr ""
+
+#: patterns/sidebar.php:62
+msgid "Tags"
+msgstr ""
+
+#: patterns/sidebar.php:72
+msgid "Follow Us On"
+msgstr ""
+
+#: patterns/tiblog.php
+msgctxt "Pattern title"
+msgid "TI Blog"
+msgstr ""
+
+#: patterns/tiblog.php:14
+msgid "Our Recent Blogs"
+msgstr ""
+
+#: styles/dark-orange.json
+msgctxt "Style variation name"
+msgid "Dark Orange"
+msgstr ""
+
+#: styles/dark-orange.json
+#: styles/deep-grape.json
+#: styles/warm-cocoa.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Base"
+msgstr ""
+
+#: styles/dark-orange.json
+#: styles/deep-grape.json
+#: styles/warm-cocoa.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Contrast"
+msgstr ""
+
+#: styles/dark-orange.json
+#: styles/deep-grape.json
+#: styles/warm-cocoa.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: styles/dark-orange.json
+#: styles/deep-grape.json
+#: styles/warm-cocoa.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
+#: styles/dark-orange.json
+#: styles/deep-grape.json
+#: styles/warm-cocoa.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Tertiary"
+msgstr ""
+
+#: styles/deep-grape.json
+msgctxt "Style variation name"
+msgid "Deep Grape"
+msgstr ""
+
+#: styles/warm-cocoa.json
+msgctxt "Style variation name"
+msgid "Warm Cocoa"
+msgstr ""
+
+#: styles/yellow.json
+msgctxt "Style variation name"
+msgid "Yellow"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page With No Sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Grid Layout(Archieve posts)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Blog Page (Sidebar on Right)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Blog Page (Sidebar on Left)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Page (Sidebar on Right)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Page (Sidebar on Left)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Blank"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "404"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "1"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "3"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "4"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "5"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "6"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Inter"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Barlow Condensed"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Bricolage Grotesque"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Rubik"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Roboto Flex"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "System Font"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Comments"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Post Meta"
+msgstr ""
