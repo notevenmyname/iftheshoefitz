@@ -88,3 +88,20 @@ body{color:var(--fitz-body);font-family:Inter,system-ui,-apple-system,Segoe UI,R
 .pf-cta{display:flex;justify-content:center;}
 .pf-cta .btn{border-color:#fff;}
 @media (max-width:900px){ .pre-grid{grid-template-columns:1fr;} }
+/* Swiper brand strip */
+.fitz-brands{ background:var(--fitz-accent); padding:14px 0; }
+.brand-swiper .swiper-slide { display:flex; align-items:center; justify-content:center; }
+.brand-swiper img { height:26px; filter:brightness(0) invert(1); opacity:.95; }
+
+/* Hero image sizing (img version) */
+.hero-visual img{ width:100%; max-height: 440px; object-fit: contain; display:block; }
+
+/* Newest releases carousel */
+.new-head .btn.btn-pill{
+  padding:6px 14px; border-radius: var(--fitz-pill);
+  background:#fff; border:2px solid #000; font-weight:800;
+}
+.newest-swiper .swiper-slide{ height:auto; } /* allow cards to size themselves */
+
+/* AOS helpers if needed */
+[data-aos]{ will-change: transform, opacity; }
