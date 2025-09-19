@@ -1,0 +1,4 @@
+Type,SKU,Name,Published,Visibility in catalog,Description,In stock?,Stock,Regular price,Sale price,Categories,Attribute 1 name,Attribute 1 value(s),Attribute 1 visible,Attribute 1 global,Attribute 1 default,Attribute 2 name,Attribute 2 value(s),Attribute 2 visible,Attribute 2 global,Attribute 2 default,Brands,Tags,Parent
+variable,TEST-500,Adidas Deerupt Runner,1,visible,Parent unisexe,1,,,,"Homme, Femme",Couleur,Noir|Blanc,1,0,,Taille,40|41,1,0,,Adidas,Adidas,
+variation,TEST-500-NOIR-40,,1,hidden,,1,50,119,,"Homme, Femme",Couleur,Noir,1,0,,Taille,40,1,0,,Adidas,Adidas,TEST-500
+variation,TEST-500-BLANC-41,,1,hidden,,1,35,119,,"Homme, Femme",Couleur,Blanc,1,0,,Taille,41,1,0,,Adidas,Adidas,TEST-500
