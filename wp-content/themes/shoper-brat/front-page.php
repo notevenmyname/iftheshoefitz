@@ -48,7 +48,7 @@ get_header();
 
 
   <!-- GENDER CARDS -->
-  <section class="fitz-gender">
+  <!-- <section class="fitz-gender">
     <div class="fitz-container">
       <h2 class="section-title">Who are you shopping for?</h2>
       <div class="gender-grid">
@@ -66,7 +66,35 @@ get_header();
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
+  <!-- GENDER CARDS -->
+<section class="fitz-gender">
+  <div class="fitz-container">
+    <h2 class="section-title">Who are you shopping for?</h2>
+    <div class="gender-grid">
+
+      <a class="gender-card" data-aos="zoom-in"
+         href="<?php echo esc_url( fitz_term_link('homme','product_cat') ); ?>">
+        <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/assets/img/gender/men.jpg'); ?>" alt="Men">
+        <div class="gc-footer"><span>Men</span><span class="gc-arrow" aria-hidden="true">→</span></div>
+      </a>
+
+      <a class="gender-card" data-aos="zoom-in" data-aos-delay="100"
+         href="<?php echo esc_url( fitz_term_link('femme','product_cat') ); ?>">
+        <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/assets/img/gender/women.jpg'); ?>" alt="Women">
+        <div class="gc-footer"><span>Women</span><span class="gc-arrow" aria-hidden="true">→</span></div>
+      </a>
+
+      <a class="gender-card" data-aos="zoom-in" data-aos-delay="200"
+         href="<?php echo esc_url( fitz_term_link('enfant','product_cat') ); ?>">
+        <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/assets/img/gender/kids.jpg'); ?>" alt="Kids">
+        <div class="gc-footer"><span>Kids</span><span class="gc-arrow" aria-hidden="true">→</span></div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
 
   <!-- NEWEST RELEASES -->
  <div class="new-head">

@@ -209,7 +209,8 @@ function fitz_shop_url(){
 }
 function fitz_term_link($slug, $taxonomy){
   $t = get_term_by('slug', $slug, $taxonomy);
-  return ($t && !is_wp_error($t)) ? get_term_link($t, $taxonomy) : fitz_shop_url();
+  return (
+    $t && !is_wp_error($t)) ? get_term_link($t, $taxonomy) : fitz_shop_url();
 }
 // Load extra UI libs only on the homepage
 add_action('wp_enqueue_scripts', function () {
@@ -227,3 +228,109 @@ add_action('wp_enqueue_scripts', function () {
   wp_enqueue_style('aos', 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css', [], '2.3.4');
   wp_enqueue_script('aos', 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js', [], '2.3.4', true);
 });
+// functions.php (child theme)
+add_action('wp_enqueue_scripts', function () {
+  if (is_page('privacy-policy')) {
+    wp_enqueue_style('privacy-y2k', get_stylesheet_directory_uri() . '/privacy.css', [], '1.0');
+  }
+});
+
+// 1) LOOP (shop/category): show SEE OPTIONS for variable products only
+add_filter('woocommerce_product_add_to_cart_text', function ($text, $product) {
+    if ($product && $product->is_type('variable')) {
+        return 'SEE OPTIONS';
+    }
+    return $text; // simple/external/grouped keep their defaults
+}, 10, 2);
+
+// 2) SINGLE product page: force ADD TO CART for simple + variable
+add_filter('woocommerce_product_single_add_to_cart_text', function ($text, $product) {
+    if ($product && ($product->is_type('simple') || $product->is_type('variable'))) {
+        return 'ADD TO CART';
+    }
+    return $text; // keep defaults for other types
+}, 10, 2);
+
+
+/**
+ * EN labels for variation attributes + custom placeholders per attribute.
+ */
+add_filter('woocommerce_attribute_label', function ($label, $name) {
+    // Normalize name (taxonomy or custom attr)
+    $name = strtolower($name);
+
+    if (in_array($name, ['pa_couleur','couleur'])) {
+        return 'Color';
+    }
+    if (in_array($name, ['pa_taille','taille'])) {
+        return 'Size';
+    }
+    return $label;
+}, 10, 2);
+
+add_filter('woocommerce_dropdown_variation_attribute_options_args', function ($args) {
+    $attr = strtolower($args['attribute'] ?? $args['taxonomy'] ?? $args['name'] ?? '');
+
+    if (in_array($attr, ['pa_couleur','couleur'])) {
+        $args['show_option_none'] = 'Select a color';
+    } elseif (in_array($attr, ['pa_taille','taille'])) {
+        $args['show_option_none'] = 'Select your size';
+    } else {
+        // Fallback for any other attribute
+        $args['show_option_none'] = 'Choose an option';
+    }
+
+    return $args;
+}, 10);
+
+
+/**
+ * Force English meta labels + tab titles on single product.
+ */
+add_filter('gettext', function ($translated, $text, $domain) {
+    // Replace a few French strings that Woo/brands plugins output.
+    $map = [
+        'UGS'                          => 'SKU',
+        'Catégorie'                    => 'Category',
+        'Catégories'                   => 'Categories',
+        'Étiquette'                    => 'Tag',
+        'Étiquettes'                   => 'Tags',
+        'Marque'                       => 'Brand',
+        'Marques'                      => 'Brands',
+        'Informations complémentaires' => 'Additional information',
+    ];
+
+    if (isset($map[$translated])) {
+        return $map[$translated];
+    }
+    return $translated;
+}, 10, 3);
+
+/* Tab titles */
+add_filter('woocommerce_product_tabs', function ($tabs) {
+    if (isset($tabs['additional_information'])) {
+        $tabs['additional_information']['title'] = 'Additional information';
+    }
+    // Leave "Description" as is (already English-friendly).
+    return $tabs;
+}, 20);
+
+add_filter('woocommerce_product_reviews_tab_title', function ($title) {
+    // Always show "Reviews (n)" in English
+    global $product;
+    $count = $product ? $product->get_review_count() : 0;
+    return sprintf('Reviews (%d)', $count);
+});
+
+// --- Headings in English ---
+add_filter('woocommerce_product_related_products_heading', function ($heading) {
+    return 'Similar products'; // or 'Related products'
+}, 10);
+
+# Back-compat (older WooCommerce)
+add_filter('woocommerce_related_products_heading', fn() => 'Similar products', 10);
+
+// Optional: also fix upsells / cross-sells
+add_filter('woocommerce_product_upsells_products_heading',  fn($h) => 'You may also like', 10);
+add_filter('woocommerce_product_cross_sells_products_heading', fn($h) => 'You may also like', 10);
+
