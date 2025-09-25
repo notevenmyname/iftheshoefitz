@@ -334,3 +334,97 @@ add_filter('woocommerce_related_products_heading', fn() => 'Similar products', 1
 add_filter('woocommerce_product_upsells_products_heading',  fn($h) => 'You may also like', 10);
 add_filter('woocommerce_product_cross_sells_products_heading', fn($h) => 'You may also like', 10);
 
+
+// Cart page — English texts
+add_filter('wc_empty_cart_message', function ($message) {
+    // Replace the default empty-cart message
+    return '<p class="cart-empty">Your cart is currently empty.</p>';
+});
+
+// Button under empty cart
+add_filter('woocommerce_return_to_shop_text', function ($text) {
+    return 'Back to shop';
+});
+
+// Any extra French strings your theme prints on the empty-cart template
+add_filter('gettext', function ($translated, $text, $domain) {
+    if (function_exists('is_cart') && is_cart()) {
+        $map = [
+            'Votre panier est actuellement vide !' => 'Your cart is currently empty.',
+            'Nouveau dans la boutique'             => 'New in store',
+            'Retour à la boutique'                 => 'Back to shop',
+        ];
+        if (isset($map[$translated])) {
+            return $map[$translated];
+        }
+    }
+    return $translated;
+}, 10, 3);
+
+// My Account dropdown/menu: force English labels
+add_filter('woocommerce_account_menu_items', function ($items) {
+    $map = [
+        'dashboard'        => 'Dashboard',
+        'orders'           => 'Orders',
+        'downloads'        => 'Downloads',
+        'edit-address'     => 'Addresses',
+        'payment-methods'  => 'Payment methods',
+        'edit-account'     => 'Account details',
+        'customer-logout'  => 'Log out',
+    ];
+    foreach ($map as $key => $label) {
+        if (isset($items[$key])) $items[$key] = $label;
+    }
+    return $items;
+}, 20);add_filter('gettext', function ($translated, $text, $domain) {
+    $map = [
+        'Tableau de bord'      => 'Dashboard',
+        'Commandes'            => 'Orders',
+        'Téléchargements'      => 'Downloads',
+        'Adresses'             => 'Addresses',
+        'Moyens de paiement'   => 'Payment methods',
+        'Détails du compte'    => 'Account details',
+        'Se déconnecter'       => 'Log out',
+    ];
+    return $map[$translated] ?? $translated;
+}, 10, 3);
+
+// Cart + Checkout: force English labels
+add_filter('gettext', function ($translated, $text, $domain) {
+    if (function_exists('is_cart') && (is_cart() || is_checkout())) {
+        $map = [
+            'Produit'                    => 'Product',
+            'Détails'                    => 'Details',
+            'Total'                      => 'Total',
+            'Supprimer l’élément'        => 'Remove item',
+            "Supprimer l'élément"        => 'Remove item',
+            'Ajouter des codes promo'    => 'Add coupon',
+            'Code promo'                 => 'Coupon code',
+            'Appliquer le code promo'    => 'Apply coupon',
+            'Total estimé'               => 'Estimated total',
+            'OU'                         => 'OR',
+        ];
+        if (isset($map[$translated])) {
+            return $map[$translated];
+        }
+    }
+    return $translated;
+}, 10, 3);
+
+
+// Catalog sorting dropdown — English labels
+add_filter('woocommerce_catalog_orderby', function ($sortby) {
+    // Keep keys, just replace the labels
+    $sortby['menu_order'] = 'Default sorting';
+    $sortby['popularity'] = 'Sort by popularity';
+    $sortby['rating']     = 'Sort by average rating';
+    $sortby['date']       = 'Sort by latest';
+    $sortby['price']      = 'Sort by price: low to high';
+    $sortby['price-desc'] = 'Sort by price: high to low';
+    return $sortby;
+}, 20);
+
+// (Optional) choose which one is selected by default
+add_filter('woocommerce_default_catalog_orderby', function ($default) {
+    return 'menu_order'; // or 'date', 'price', 'price-desc', etc.
+});
