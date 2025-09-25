@@ -1,0 +1,12 @@
+/*
+Theme Name: Brat
+Theme URI: https://example.local/brat
+Author: You
+Description: Standalone copy of Shoper Brat (no parent dependency)
+Version: 1.0.0
+Text Domain: brat
+*/
+
+/* Minimal reset to ensure styles load; main styles are in assets/css/main.css */
+body{margin:0}
+
